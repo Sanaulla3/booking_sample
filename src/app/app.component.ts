@@ -31,7 +31,7 @@ export class AppComponent {
       this.rooms--;
       let people = this.adults + this.children;
       if( (people/4) > this.rooms){
-        let subs = people % 4;
+        let subs = people - ( this.rooms * 4 );
         if(subs < this.children){
           this.children -= subs;
         }
