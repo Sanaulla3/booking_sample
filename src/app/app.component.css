@@ -1,0 +1,35 @@
+.color{
+    color: #293390;
+}
+
+.fs{
+    font-size: 1.2em;
+}
+
+.mr{
+    margin-right: 1em;
+}
+
+.btn{
+    font-size: 1.5em;
+}
+
+.plus-btn{
+    color: #e33b5c;
+}
+
+.table-border{
+    border: solid 1px; 
+    padding-left: 15px; 
+    padding-right: 15px
+}
+
+.bottom{
+    border-bottom: solid 1px;
+}
+
+.header{
+    font-size: 1.5em;
+    margin-top: 2em;
+    padding-left: 15px;
+}

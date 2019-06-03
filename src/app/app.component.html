@@ -1,0 +1,59 @@
+<div class="container col-md-12 color">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+    <div class="row header">
+      <i class="fa fa-group color"></i>
+      <span>Choose number of <strong>people</strong></span>
+    </div>
+    <div class="demo-list-action mdl-list table-border">
+      <div class="mdl-list__item color bottom">
+        <span class="mdl-list__item-primary-content">
+          <i class="fa fa-bed fs mr"></i>
+          <span>ROOMS</span>
+        </span>
+        <span class="mdl-list__item-secondary-content">
+        <div class="row">
+          <i *ngIf="rooms == 1" class="fa fa-minus-circle btn" disabled></i>
+          <i *ngIf="rooms > 1" class="fa fa-minus-circle btn" (click)="decrementRooms()"></i>
+          <span>{{ rooms }}</span>
+          <i *ngIf="rooms == 5" class="fa fa-plus-circle btn plus-btn" disabled></i>
+          <i *ngIf="rooms < 5" class="fa fa-plus-circle btn plus-btn" (click)="increaseRooms()"></i>
+        </div>
+      </span>
+      </div>
+      <div class="mdl-list__item color bottom">
+        <span class="mdl-list__item-primary-content">
+          <i class="fa fa-user fs mr"></i>
+          <span>ADULTS</span>
+        </span>
+        <span class="mdl-list__item-secondary-content">
+        <div class="row">
+          <i *ngIf="adults == 1" class="fa fa-minus-circle btn" disabled></i>
+          <i *ngIf="adults > 1" class="fa fa-minus-circle btn" (click)="decreaseAdults()"></i>
+          <span>{{adults}}</span>
+          <i *ngIf="(adults + children) == 20" class="fa fa-plus-circle btn plus-btn" disabled></i>
+          <i *ngIf="(adults + children) < 20" class="fa fa-plus-circle btn plus-btn" (click)="increaseAdults()"></i>
+        </div>
+      </span>
+      </div>
+      <div class="mdl-list__item color">
+        <span class="mdl-list__item-primary-content">
+          <i class="fa fa-child fs mr"></i>
+          <span>CHILDREN</span>
+        </span>
+        <span class="mdl-list__item-secondary-content">
+        <div class="row">
+          <i *ngIf="children == 0" class="fa fa-minus-circle btn" disabled></i>
+          <i *ngIf="children > 0" class="fa fa-minus-circle btn" (click)="decreaseChildren()"></i>
+          <span>{{children}}</span>
+          <i *ngIf="(adults + children) == 20" class="fa fa-plus-circle btn plus-btn" disabled></i>
+          <i *ngIf="(adults + children) < 20" class="fa fa-plus-circle btn plus-btn" (click)="increaseChildren()"></i>
+        </div>
+      </span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+  </div>
+</div>
